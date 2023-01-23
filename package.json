@@ -1,0 +1,27 @@
+{
+  "name": "bincom-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Bincom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./route_handlers/courses.js -d build",
+    "start": "nodemon -r esm Bincom.js"
+  },
+  "author": "Savvy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "babel-preset-env": "^1.7.0",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.20"
+  }
+}
